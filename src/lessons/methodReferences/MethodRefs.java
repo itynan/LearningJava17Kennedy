@@ -1,10 +1,7 @@
 package lessons.methodReferences;
 
 import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.function.*;
 
 public class MethodRefs {
@@ -57,10 +54,29 @@ public class MethodRefs {
         StringBuilder sb1 = sbL.get(); sb1.append("this is ").append("the first part");
         sb1.append("this is the second "); sb1.append("part");
         System.out.println(sb1);
+
+        Function<Integer, List<String>> toIntegerMR = ArrayList::new;
+        Function<Integer, List<String>> toIntegerL = (x) -> new ArrayList<>(x);
+
+
+        List<String> list1 = toIntegerMR.apply(10);
+        list1.add("45");
+        list1.add("46");
+        list1.add("47");
+        System.out.println(list1);
+
+        List<String> list2 = toIntegerL.apply(10);
+        list2.add("45");
+        list2.add("46");
+        list2.add("47");
+        System.out.println(list1);
+
+
     }
     public static void main(String[] args) {
         boundMethodRefs();
         unboundMethodRefs();
         staticMethodRefs();
+        constructorMethodRefs();
     }
 }

@@ -1,4 +1,4 @@
-package lessons.lambdaInterfaces;
+package lambdas.lambdaInterfaces;
 
 public interface iLambda {
         void m();

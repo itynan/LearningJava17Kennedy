@@ -1,7 +1,7 @@
-package lessons.lambdas;
+package lambdas.lambdas;
 
-import lessons.lambdaInterfaces.Evaluate;
-import lessons.lambdaInterfaces.iLambda;
+import lambdas.lambdaInterfaces.Evaluate;
+import lambdas.lambdaInterfaces.iLambda;
 
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;

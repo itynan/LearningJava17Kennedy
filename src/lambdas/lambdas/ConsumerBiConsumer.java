@@ -1,4 +1,4 @@
-package lessons.lambdas;
+package lambdas.lambdas;
 
 import java.util.ArrayList;
 import java.util.HashMap;

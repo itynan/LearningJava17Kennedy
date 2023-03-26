@@ -1,6 +1,5 @@
-package lessons.methodReferences;
+package lambdas.methodReferences;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.function.*;
 
